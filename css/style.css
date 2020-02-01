@@ -57,6 +57,24 @@ h4 {
     text-transform: uppercase;
 }
 
+.navbar-default .navbar-brand:hover {
+    color: inherit;
+    cursor: pointer;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #1abc9c;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #1abc9c;
+    background-color: #1abc9c;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
 /* parte immagine profilo */
 
 .profile-banner {
@@ -100,6 +118,13 @@ h4 {
 /* fine immagine profilo */
 
 /* parte immagini a griglia */
+
+.my--img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .icon-img {
     margin-bottom: 30px;
 }
@@ -108,8 +133,30 @@ h4 {
     border-radius: 8px;
 }
 
-.overlay:hover {
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-color: #1abc9c;
+    border-radius: 8px;
+    text-align: center;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.fas {
+    color: white;
+    font-size: 70px;
+    font-weight: 900;
+    transform: translate(0,100%);
+}
+
+.my--img-container:hover .overlay {
+    opacity: 0.9;
 }
 
 /* fine immagini a griglia */
